@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <div class="text">
+      <h1>Learn to code by watching others</h1>
+
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+
+    </div>
+
+    <div class="form">
+      <div class="try">
+        <p>
+          Try it free 7 days <span class="pay">then $20/mo. thereafter</span>
+        </p>
+      </div>
+
+      <form action="">
+        <input type="text" placeholder="First Name"> 
+        <img class="error img" src="./images/icon-error.svg" alt="">
+        <p class="error texts"> <i>First name cannot be empty</i> </p>
+        <input type="text" placeholder="Last Name"> 
+        <img class="error img" src="./images/icon-error.svg" alt="">
+        <p class="error texts"> <i>Last Name cannot be empty</i> </p>
+        <input type="email" placeholder="Email Address" class="email" title="email@example/com" required> 
+        <img class="error img" src="./images/icon-error.svg" alt="">
+        <p class="error texts"> <i>Looks like this is not an email</i> </p>
+        <input type="password" placeholder="Password"> 
+        <img class="error img" src="./images/icon-error.svg" alt="">
+        <p class="error texts"> <i>Password cannot be empty</i> </p>
+        <button type="submit">Claim your free trial</button>
+        <div class="note">
+          <p class="agree">
+            By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span>
+          </p>
+        </div>
+      </form>    
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
