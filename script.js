@@ -14,10 +14,10 @@ btn.addEventListener("click",(e)=>{
         errorMsg[index].style.visibility = isEmpty ? 'visible' : 'hidden';
         input.style.border = isEmpty ?"2px solid red" : ''
 
-        if (!input.type === 'email') {
-            if (!isEmpty && !isValidEmail(input.value)) {
+        if (input.type === 'email') {
+            if (isEmpty && !isValidEmail(input.value)) {
                 input.style.color = 'red';
-                input.value = "email@example/com";
+                input.placeholder = "email@example.com";
             } else {
                 input.style.color = '';
             }
